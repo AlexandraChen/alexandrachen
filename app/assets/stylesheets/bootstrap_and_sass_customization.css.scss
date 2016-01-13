@@ -1,4 +1,8 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+$font-family-sans-serif:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $navbar-default-bg: transparent;
-
+$navbar-default-brand-color: black;
+$navbar-default-link-color: black;
+$navbar-default-link-hover-color: #C97AF8;
 @import 'bootstrap';
 
