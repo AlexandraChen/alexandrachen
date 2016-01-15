@@ -1,5 +1,12 @@
+$clouds: #ecf0f1;
+$light-clounds: #fff;
+$wisteria: #8e44ad;
+$wet-asphalt: #34495e;
+$midnight-blue: #2c3e50;
+$amethyst: #9b59b6;
+
 body{
-  background: #fff;
+  background: $light-clounds;
 }
 
 .navbar-brand{
@@ -8,8 +15,9 @@ body{
 }
 
 .past-banner{
-  background: white;
+  background: $clouds;
 }
+  
 
 #main-panel{
   width: 100%;
@@ -25,28 +33,26 @@ h1{
   margin-top: 0;
 }
 
-#blog{
+#blog, #who-am-i, #contact-me{
+  height: 50px;
+  width: 100%;
+}
+#blog-content{
   width: 100%;
   height: 750px;
-  display: flex;
-  justify-content: center;
-  #wordpress-blog{
-    width: 85%;
-    height: 100%;
-  }
 }
 
-#contact-me{
+#contact-me-content{
   width: 100%;
   height: 450px;
 }
 
-#who-am-i{
-  background: black;
+#who-am-i-content{
+  background: $wisteria;
   width: 100%;
   height: 585px;
   h1{
-    color: white;
+    color: $clouds;
   }
   img{
     width: 40%;
@@ -61,6 +67,12 @@ h1{
 
 footer{
   width: 100%;
-  height: 250px;
-  background-color: gray;
+  height: 100px;
+  line-height: 100px;
+  background-color: $clouds;
+  text-align: center;
+  vertical-align: middle;
+  p{
+    margin: 0px;
+  }
 }
