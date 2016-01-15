@@ -1,6 +1,6 @@
 $(document).ready(function () {
   
-  var mainbottom = $('#blog').offset().top + $('#blog').height()
+  var mainbottom = $('#main-panel').offset().top + $('#main-panel').height()
   $(window).on('scroll',function(){
     stop = Math.round($(window).scrollTop())
     if (stop > mainbottom) {
@@ -20,5 +20,10 @@ $(document).ready(function () {
       window.location.hash = target
    })
   })
+
+  var iframe = document.getElementById("iframe");
+  var blog = document.getElementById("wordpress-blog");
+  blog.innerHTML = iframe.contentWindow.document.getElementById("content").innerHTML;
+
 })
 
