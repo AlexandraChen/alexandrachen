@@ -7,7 +7,11 @@ body{
   letter-spacing: 2px;
 }
 
-.main-panel{
+.past-banner{
+  background: white;
+}
+
+#main-panel{
   width: 100%;
   height: 800px;
   background: url("/assets/sites/background.jpeg") no-repeat;
@@ -20,17 +24,17 @@ h1{
   vertical-align: middle;
 }
 
-.blog{
+#blog{
   width: 100%;
   height: 1000px;
 }
 
-.who-am-i, .contact-me{
+#who-am-i, #contact-me{
   width: 100%;
   height: 450px;
 }
 
-.who-am-i{
+#who-am-i{
   background: black;
   h1{
     color: white;
