@@ -1,5 +1,5 @@
 $clouds: #ecf0f1;
-$light-clounds: #fff;
+$light-clouds: #fff;
 $wisteria: #8e44ad;
 $midnight-blue: #2c3e50;
 $amethyst: #9b59b6;
@@ -7,8 +7,8 @@ $amethyst: #9b59b6;
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 $font-family-sans-serif:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $navbar-default-bg: transparent;
-$navbar-default-brand-color: $amethyst;
-$navbar-default-link-color: $amethyst;
-$navbar-default-link-hover-color: $wisteria;
+$navbar-default-brand-color: $light-clouds;
+$navbar-default-link-color: $light-clouds;
+$navbar-default-link-hover-color: $amethyst;
 @import 'bootstrap';
 
