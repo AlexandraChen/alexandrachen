@@ -1,9 +1,4 @@
-$clouds: #ecf0f1;
-$light-clouds: #fff;
-$wisteria: #8e44ad;
-$wet-asphalt: #34495e;
-$midnight-blue: #2c3e50;
-$amethyst: #9b59b6;
+@import 'colors.scss';
 
 body{
   background: $light-clouds;
@@ -15,10 +10,11 @@ body{
 }
 
 .past-banner{
-  background: $wet-asphalt;
+  background: $wisteria;
+  opacity: 0.80;
 }
 
-#overlay,#headlines, .btn{
+#overlay, #headlines, #more-about-me{
   position: absolute;
 }
   
@@ -29,26 +25,27 @@ body{
   background-size: cover;
   margin-top: -25px; 
   z-index: 1;
+  margin: 0 auto;
 }
 
 #overlay{ 
   width: 100%;
   height: 800px;
-  background: $wet-asphalt; 
-  opacity: 0.70;
+  background: $seance; 
+  opacity: 0.30;
   z-index: 2;
 }
 
 #headlines{
   width: 100%;
-  height: 800px;
+  height: 400px;
   z-index: 3;
   #title, #slogan{
     width: 100%;
     color: $light-clouds;
     text-align: center;
     position: relative;
-    top: 40%;
+    top: 85%;
     transform: translateY(-40%);
     letter-spacing: 1.5px;
   }
@@ -58,6 +55,25 @@ body{
   }
   #slogan{
     font-size: 20px;
+    margin-top: -15px;
+  }
+}
+
+#more-about-me{
+  margin: auto;
+  height: 50px;
+  width: 200px;
+  border: 3px solid $studio;
+  color: #fff;
+  text-align: center;
+  padding: 13px;
+  position: relative;
+  top: 55%;
+  letter-spacing: 1.5px;
+  z-index: 4;
+  &:hover{
+    border: 3px solid $light-wisteria;
+    background-color: $wisteria;
   }
 }
 

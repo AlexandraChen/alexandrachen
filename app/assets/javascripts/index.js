@@ -21,9 +21,5 @@ $(document).ready(function () {
    })
   })
 
-  var iframe = document.getElementById("iframe");
-  var blog = document.getElementById("wordpress-blog");
-  blog.innerHTML = iframe.contentWindow.document.getElementById("content").innerHTML;
-
 })
 

@@ -1,14 +1,9 @@
-$clouds: #ecf0f1;
-$light-clouds: #fff;
-$wisteria: #8e44ad;
-$midnight-blue: #2c3e50;
-$amethyst: #9b59b6;
-
+@import 'colors.scss';
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 $font-family-sans-serif:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $navbar-default-bg: transparent;
 $navbar-default-brand-color: $light-clouds;
 $navbar-default-link-color: $light-clouds;
-$navbar-default-link-hover-color: $amethyst;
+$navbar-default-link-hover-color: black;
 @import 'bootstrap';
 
