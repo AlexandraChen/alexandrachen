@@ -72,11 +72,12 @@ body{
   color: #fff;
   padding: 13px;
   text-align: center;
-  margin-top: 450px;
-  margin-left: 50%;
-  margin-right: 50%;
   letter-spacing: 1.5px;
   z-index: 5;
+  margin: auto;
+  position: absolute;
+  left: 0; right: 0;
+  margin-top: 450px;
   &:hover{
     border: 3px solid $light-wisteria;
     background-color: $wisteria;
