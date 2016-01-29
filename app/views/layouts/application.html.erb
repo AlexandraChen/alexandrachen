@@ -10,7 +10,16 @@
 <body>
 <%= render partial: 'layouts/navbar' %>
 
-<%= yield %>
+  <div class="container">
+    <% flash.each do |name, msg| %>
+      <% if alert %>
+        <%= content_tag(:div, msg, class:"alert alert-danger") %>
+      <% elsif notice %>
+        <%= content_tag(:div, msg, class:"alert alert-success") %>
+      <% end %>
+    <% end %>
+    <%= yield %>
+  </div>
 
 </body>
 </html>
