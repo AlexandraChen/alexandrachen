@@ -9,16 +9,13 @@
 </head>
 <body>
 <%= render partial: 'layouts/navbar' %>
-
-  <div class="container">
-    <% flash.each do |name, msg| %>
-      <% if alert %>
-        <%= content_tag(:div, msg, class:"alert alert-danger") %>
-      <% elsif notice %>
-        <%= content_tag(:div, msg, class:"alert alert-success") %>
-      <% end %>
+  <% flash.each do |name, msg| %>
+    <% if alert %>
+      <%= content_tag(:div, msg, class:"alert alert-danger flash-msg") %>
+    <% elsif notice %>
+      <%= content_tag(:div, msg, class:"alert alert-success flash-msg") %>
     <% end %>
-  </div>
+  <% end %>
   <%= yield %>
 </body>
 </html>

@@ -19,6 +19,13 @@ body{
   opacity: 0.80;
 }
 
+.flash-msg{
+  position:absolute;
+  margin-top: 75px;
+  width: 100%;
+  z-index: 9999;
+}
+
 #overlay, #headlines, #more-about-me{
   position: absolute;
 }
