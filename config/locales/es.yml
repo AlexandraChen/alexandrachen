@@ -3,3 +3,8 @@ es:
   who_am_i: "¿Quién soy?"
   contact_me: "Contáctame"
   more-about-me: "Conóceme"
+  date:
+    order:
+      - :day
+      - :month
+      - :year
