@@ -10,7 +10,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = current_user.posts.new(post_params)
+    @post = current_user.blog.posts.new(post_params)
     if @post.save
       redirect_to admin_panel_path, notice: "Post succesfully created" 
     else
@@ -25,7 +25,7 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :content, :published_date, :user_id)
+    params.require(:post).permit(:title, :content, :published_date, :blog_id)
   end
 
 end
